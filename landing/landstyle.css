@@ -55,8 +55,8 @@ h1.alt-subheading {
   font-variation-settings:
     "wdth" 100;
 }
+}
 
-font-weight: bold;
-/*font-weight: 750;*/
-
+h1.alt-subheading2 {
+  font-family: 'PT Serif', serif;
 }
