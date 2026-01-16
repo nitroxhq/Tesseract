@@ -18,7 +18,7 @@
     font-weight: 400;
     font-size: .85rem;
 
-    text-align: right;
+    /* text-align: right; */
 
     max-width: 1500px;
     margin: 0 auto;
@@ -53,5 +53,22 @@
 }
 .tesseract-heading:hover {
     text-decoration: underline;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #5865F2; /* Discord blue */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+
+    display: block; 
+    margin: auto;
+    width: 45px;
 }
 
