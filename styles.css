@@ -156,7 +156,7 @@
 .nav {
   height: 3.2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   color: var(--text);
 }
@@ -171,6 +171,7 @@
   
   list-style: none;
   gap: 1.5rem;
+  justify-content: flex-end;
 }
 .nav-menu ul li a {
   color: var(--text);
