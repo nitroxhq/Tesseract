@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tesseract. now in development.</title>
+    <title>Tesseract | Your Productivity Supertool</title>
+    <meta name="description" content="Tesseract is your all-in-one solution for managing your work, learning, and creativity. perfect for students, creatives, and professionals,  connect your notes, todos, calendar, content capture, time tracking, and more. take control of your mind with tesseract.">
     <meta name="google-site-verification" content="eWbqFtcYwJfMpLeloYcpYXO1XsaeRL7oXrfr5S-JHiI" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Geist+Mono:wght@100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- styling + favicon -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css" />
     <link rel="icon" type="image/svg+xml" href=".assets/tesseract logo 55px.svg">
     <link rel="icon" type="image/png" href=".assets/tesseract logo 55px gap 512px.png">
 
@@ -23,7 +24,7 @@
   </head>
 
   <body>
-    <nav>
+    <nav class="top-nav">
       <!--
       <div class="logo nav-logo" aria-hidden="true">
           <svg
@@ -52,9 +53,9 @@
         <ul>
           <li><a href="https://nitroxhq.github.io/" class="nav-link">nitrox</a></li>
           <li><a href="#" class="nav-link">home</a></li>
-          <li><a href="#" class="nav-link">features</a></li>
+          <li><a href="#features" class="nav-link">features</a></li>
           <li><a href="/about/about.html" class="nav-link">why tesseract?</a></li>
-          <li><a href="/download/download.html" class="nav-link">download</a></li>
+          <li><a href="tab-manager.html" class="nav-link">tab manager</a></li>
         </ul>
       </div>
     </nav>
@@ -82,14 +83,14 @@
           <span>Tesseract is your </span>
           <span id="typeWriter"><!--productivity supertool.--></span>
           <br>
-          <span class="metadata"> now in development.</span> <!-- tagline?? -->
+
           <!-- FIX: 1) in browser (not vscode) the logo shifts when typing. /// 2) ADD MARGIN UNDER "now under development" /// 3) make sure its centered. -->
         </h2>
 
         <nav class="cta-links" aria-label="primary actions">
           <div class="main-btns">
-            <a class="btn btn-primary" href="download/download.html">download</a>
-            <a class="btn btn-sub" href="404.html">web version</a>
+            <a class="btn btn-primary" href="https://tally.so/r/2EOxYM">join waitlist</a>
+            <!-- <a class="btn btn-sub" href="404.html">web version</a> -->
           </div>
 
           <div class="metadata">
@@ -97,13 +98,113 @@
           </div>
 
           <a class="btn btn-bar" href="about/about.html">
+            <!--
             <span class="btn btn-bar-text">why tesseract???</span>
             <span class="btn btn-bar-div">|</span>
             <span class="btn btn-bar-text">more info <span class="arrow">→</span></span>
+            -->
+            <span class="btn btn-bar-text">nitrox is fixing technology.</span>
+            <span class="btn btn-bar-div">|</span>
+            <span class="btn btn-bar-text">learn more <span class="arrow">→</span></span>
           </a>
         </nav>
       </div>
     </main>
+
+    <section id="features" class="bento-section">
+      <h2 class="bento-heading">built for everything you do.</h2>
+      <div class="bento-grid">
+        <div class="bento-card bento-wide">
+          <i class="ph-duotone ph-tree-structure"></i>
+          <h3>object-based organization</h3>
+          <p>connect ideas, notes, and tasks through real relationships — not folders.</p>
+        </div>
+
+        <div class="bento-card bento-wide">
+          <i class="ph-duotone ph-notebook"></i>
+          <h3>notes</h3>
+          <p>rich text, markdown, and more — your thoughts, structured.</p>
+        </div>
+
+        <div class="bento-card">
+          <i class="ph-duotone ph-check-square"></i>
+          <h3>todos, goals &amp; habits</h3>
+          <p>track daily routines, long-term goals, and everything between.</p>
+        </div>
+
+        <div class="bento-card">
+          <i class="ph-duotone ph-camera"></i>
+          <h3>content capture</h3>
+          <p>save articles, clips, and ideas before they disappear.</p>
+        </div>
+
+        <div class="bento-card">
+          <i class="ph-duotone ph-calendar-blank"></i>
+          <h3>calendar</h3>
+          <p>plan your days, visualize your time, stay on track.</p>
+        </div>
+
+        <div class="bento-card">
+          <i class="ph-duotone ph-clock-countdown"></i>
+          <h3>time tracking</h3>
+          <p>know where your hours go. make better choices next time.</p>
+        </div>
+
+        <div class="bento-card">
+          <i class="ph-duotone ph-pencil-line"></i>
+          <h3>whiteboards</h3>
+          <p>think out loud. brainstorm, sketch, map it all out.</p>
+        </div>
+
+        <div class="bento-card">
+          <i class="ph-duotone ph-cards"></i>
+          <h3>flashcards</h3>
+          <p>spaced repetition that actually sticks.</p>
+        </div>
+
+        <div class="bento-card">
+          <i class="ph-duotone ph-database"></i>
+          <h3>databases</h3>
+          <p>structured data, your way. powerful without the complexity.</p>
+        </div>
+
+        <div class="bento-card">
+          <i class="ph-duotone ph-sparkle"></i>
+          <h3>ai assistant</h3>
+          <p>ai that gets out of the way while still maximizing your learning, productivity, and organization.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2 class="cta-heading">ready to take back your mind?</h2>
+      <p class="cta-subtext">join the waitlist and be among the first to experience tesseract.</p>
+      <br>
+      <a class="btn btn-primary" href="https://tally.so/r/2EOxYM">join waitlist</a>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <div class="footer-icon" aria-hidden="true">
+          <svg
+            width="867"
+            height="985"
+            viewBox="0 0 867 985"
+            fill="#A161EA"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M154.513 370.701C165.961 377.31 173.013 389.525 173.013 402.744V628.63C173.013 641.853 180.069 654.071 191.523 660.679L387.237 773.591C398.69 780.198 405.747 792.416 405.747 805.639V920.172C405.747 948.655 374.914 966.456 350.247 952.215L18.5 760.681C7.05216 754.072 0 741.857 0 728.638V345.579C0 317.096 30.8333 299.295 55.5 313.536L154.513 370.701ZM866.025 728.638C866.025 741.857 858.973 754.072 847.525 760.681L515.777 952.215C491.111 966.456 460.277 948.655 460.277 920.172V805.639C460.277 792.416 467.334 780.198 478.788 773.591L674.502 660.679C685.956 654.071 693.013 641.853 693.013 628.63V402.736C693.013 389.517 700.065 377.302 711.513 370.693L810.525 313.528C835.192 299.287 866.025 317.089 866.025 345.571V728.638ZM783.263 202.217C807.93 216.458 807.93 252.061 783.263 266.303L684.138 323.533C672.693 330.14 658.594 330.143 647.148 323.539L451.502 210.667C440.06 204.066 425.966 204.066 414.523 210.667L218.872 323.543C207.425 330.146 193.326 330.144 181.882 323.537L82.7559 266.307C58.0892 252.065 58.0893 216.462 82.7559 202.221L414.513 10.681C425.961 4.07156 440.065 4.07155 451.513 10.6809L783.263 202.217Z"
+            />
+            <path
+              d="M414.591 273.014C426.039 266.404 440.144 266.404 451.592 273.014L619.98 370.235C631.428 376.845 638.48 389.059 638.48 402.278V596.724C638.48 609.942 631.428 622.157 619.98 628.766L451.592 725.988C440.144 732.598 426.039 732.598 414.591 725.988L246.203 628.766C234.755 622.157 227.703 609.942 227.703 596.724V402.278C227.703 389.059 234.755 376.845 246.203 370.235L414.591 273.014Z"
+            />
+          </svg>
+        </div>
+        <span class="footer-text">tesseract</span>
+      </div>
+      <p class="footer-copyright">© 2026 nitrox.</p>
+    </footer>
 
     <!-- site JavaScript -->
     <script src="script.js"></script>
@@ -116,4 +217,3 @@
   -->
   </body>
 </html>
-
