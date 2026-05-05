@@ -258,15 +258,22 @@ nav.cta-links {
   display: block;
   background-color: var(--primary-color);
 
-  border-radius: 1rem;
+  border-radius: 7.5px;
   background: linear-gradient(currentColor 0 0) bottom left / var(--underline-width, 0%) 0.1em no-repeat;
   transition: 0.5s ease; /* Animate the background size */
-
 }
 .nav-menu ul li:hover {
   background-color: var(--primary-color);
   border-radius: 7.5px;
   --underline-width: 100%; /* Change the custom property on hover */
+
+  background: var(--primary-color); 
+  border-color: var(--secondary-color);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(161, 97, 234, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  transition: all 0.5s ease-in-out; ;
 }
 .nav-hamburger {
   display: none; /* Hidden by default, shown on smaller screens */
@@ -490,30 +497,6 @@ body {
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
-.cta-section {
-  text-align: center;
-  padding: 4rem 2rem;
-  max-width: 700px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.cta-heading {
-  font-family: var(--serif);
-  font-size: 2rem;
-  margin: 0;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-}
-
-.cta-subtext {
-  font-family: var(--sans-serif);
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
-  margin: 0;
-}
 
 .bento-grid {
   display: grid;
@@ -524,7 +507,8 @@ body {
 
 .bento-card {
   background: rgba(20, 20, 20, 0.7);
-  border: 1px solid rgba(161, 97, 234, 0.15);
+  /* border: 1px solid rgba(161, 97, 234, 0.15); */
+  border: 2.4px solid rgba(161, 97, 234, 0.2);
   border-radius: 0.75rem;
   padding: 1.5rem;
   display: flex;
@@ -534,9 +518,29 @@ body {
 }
 
 .bento-card:hover {
+  /*
   border-color: rgba(161, 97, 234, 0.5);
   transform: translateY(-2px);
   box-shadow: 0 4px 20px rgba(161, 97, 234, 0.15);
+  */
+
+  background: rgba(161, 97, 234, 0.2); 
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(161, 97, 234, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}
+
+/* Optional: Make the icon and text pop more on hover */
+.bento-card:hover i {
+  color: var(--secondary-color);
+  filter: drop-shadow(0 0 8px var(--primary-color));
+}
+
+.bento-card:hover h3 {
+  color: #fff;
+  filter: drop-shadow(0 0 8px var(--secondary-color));
 }
 
 .bento-card i {
@@ -588,6 +592,35 @@ body {
     font-size: 1.5rem;
   }
 }
+
+
+
+/* cta */
+.cta-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cta-heading {
+  font-family: var(--serif);
+  font-size: 2rem;
+  margin: 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.cta-subtext {
+  font-family: var(--sans-serif);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
 
 /* footer ------------------------------ */
 .site-footer {
