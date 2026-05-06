@@ -8,7 +8,8 @@
   /* background: #2e2e2e;
     background: linear-gradient(240deg,rgba(46, 46, 46, 1) 0%, rgba(15, 15, 15, 1) 100%); */
   /* Source - https://beta.stackoverflow.com/q/4011113#13996191 */
-  background-image: url("https://cdn.prod.website-files.com/6674f0cdb5b7b401612cf015/6674f0cdb5b7b401612cf065_noise-50.avif");
+  /* background-image: url("https://cdn.prod.website-files.com/6674f0cdb5b7b401612cf015/6674f0cdb5b7b401612cf065_noise-50.avif"); */
+  background-image: url(./assets/noise.avif);
 
   /*
   background-image: body {
